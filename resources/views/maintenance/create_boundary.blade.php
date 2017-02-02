@@ -19,12 +19,12 @@
 		            <div class="modal-body">
 					    <div class="md-form form-group" style="color:black;">
 					        <i class="fa fa-book prefix"></i>
-					        <input type="text" id="fName"  name="fName" class="form-control validate" onkeyup="check();">
+					        <input type="text" id="fName"  name="fName" class="form-control" onkeyup="check();">
 					        <label for="fName" data-error="Error" data-success="Valid">Fees Name</label>
 					    </div>
 					    <div class="md-form form-group" style="color:black;">
 					        <i class="fa fa-rub prefix"></i>
-					        <input type="number" id="fAmount" name="fAmount" onkeyup="check();" class="form-control validate"/ >
+					        <input type="number" id="fAmount" name="fAmount" onkeyup="check();" class="form-control"/ >
 			                <label for="fAmount">Amount</label>
 					    </div>
 		            </div>		      
@@ -173,7 +173,7 @@
 								<input value="{{$newID}}" id="boundaryId" name="boundaryId" type="text" hidden>
 							    <div class="md-form form-group" style="color:black;">
 							        <i class="fa fa-cab prefix"></i>
-							        <input type="text" id="bName" name="bName" class="form-control validate">
+							        <input type="text" id="bName" name="bName" class="form-control">
 							        <label for="bName" data-error="Error" data-success="Valid">Boundary Name</label>
 							    </div>
 							    <div class="md-form form-group" style="color:black;">
@@ -203,29 +203,17 @@
 						                    </thead>
 											<tbody id="tbodybbreakdowntable">
 						                    
-						                      
-						                        
 					                    	</tbody>
 					                    </table>
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<h3 style="color:black;">Boundary Total</h3>
-									<br>
-								    <div class="md-form form-group" style="color:black;">
-								    	 <i class="fa fa-rub prefix"></i>
-
-								        <label>Boundary :</label>
-								        <input type="number" style="font-weight: bold;" value="0" step="any" id="boundamt" name="boundamt" class="form-control validate" disabled>
-
-								        
-								    </div>
-<br>
 								    <div class="md-form form-group" style="color:black;">
 								    <i class="fa fa-rub prefix"></i>
 
-								        <label style="font-size: 15pt;">Total Amount :</label>	
-								        <input type="number" step="any" id="boundaryamount" name="boundaryamount" class="form-control validate" disabled>
+								        <label style="font-size: 15pt;"> Amount :</label>	
+								        <input type="number" step="any" id="boundaryamount" name="boundaryamount" class="form-control" disabled>
 								    </div>
 
 								</div>
@@ -238,7 +226,7 @@
 					<div class="card-footer md-form form-group">
 						<div class="col-sm-8"></div>
 						<div class="col-sm-4">
-					  <button class="btn btn-danger" id="btnSave" name="btnSave" style="background-color:black">Save</button>
+					  		<button type="submit" class="btn btn-danger" id="btnSave" name="btnSave" style="background-color:black">Save</button>
 					        <button type="button" class="btn btn-danger" data-toggle="collapse" href="#Add" >Cancel</button>							
 						</div>
 					</div>
